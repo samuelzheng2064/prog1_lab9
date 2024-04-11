@@ -11,17 +11,20 @@ def main():
     while True:
         n = int(input("Please enter an option: "))
         if n == 1:
-            encode_num = int(input("Please enter your password to encode: "))
+            encode_num = input("Please enter your password to encode: ")
             print("Your password has been encoded and stored!")
-            encode_string = str(encode_num)
             modified_int = []
-            for digit in encode_string:
+            for digit in encode_num:
                 modified_digit = int(digit) + 3
-                modified_int.append(str(modified_digit))
+                if modified_digit == 3:  # Handle case where original digit is '0'
+                    modified_int.append('3')
+                else:
+                    modified_digit = str(modified_digit)
+                    modified_digit = int(modified_digit[-1])
+                    modified_int.append(str(modified_digit))
 
             modified_number = int(''.join(modified_int))
-
-
+            print("Modified password:", modified_number)
         elif n == 3:
             break
 
