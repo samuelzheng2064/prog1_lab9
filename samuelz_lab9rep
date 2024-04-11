@@ -37,7 +37,7 @@ def main():
             modified_number = int(''.join(modified_int))
             print("Modified password:", modified_number)
         elif n == 2:
-            decode()
+            decode(modified_number)
         elif n == 3:
             break
 
