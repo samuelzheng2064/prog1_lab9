@@ -1,0 +1,28 @@
+# Samuel's lab 9
+
+print("""Menu\n
+-------------\n
+1. Encode\n
+2. Decode\n
+3. Quit\n""")
+
+n = int(input("Please enter an option: "))
+
+
+def main():
+    encode_num = 0
+    if n == 1:
+        encode_num = int(input("Please enter your password to encode: "))
+        print("Your password has been encoded and stored!")
+        encode_string = str(encode_num)
+        modified_int = []
+        for i in range(encode_num):
+
+
+    elif n == 2:
+
+
+
+
+if __name__ == "__main__":
+    main()
