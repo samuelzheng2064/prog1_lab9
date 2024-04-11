@@ -16,10 +16,13 @@ def main():
         print("Your password has been encoded and stored!")
         encode_string = str(encode_num)
         modified_int = []
-        for i in range(encode_num):
+        for i in encode_string:
+            modified_digit = int(digit) + 3
+            modified_digits.append(str(modified_digit))
 
 
     elif n == 2:
+
 
 
 
