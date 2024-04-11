@@ -1,28 +1,29 @@
 # Samuel's lab 9
 
-print("""Menu\n
--------------\n
-1. Encode\n
-2. Decode\n
-3. Quit\n""")
-
-n = int(input("Please enter an option: "))
+print("""Menu
+-------------
+1. Encode
+2. Decode
+3. Quit""")
 
 
 def main():
-    encode_num = 0
-    if n == 1:
-        encode_num = int(input("Please enter your password to encode: "))
-        print("Your password has been encoded and stored!")
-        encode_string = str(encode_num)
-        modified_int = []
-        for i in encode_string:
-            modified_digit = int(digit) + 3
-            modified_digits.append(str(modified_digit))
+    while True:
+        n = int(input("Please enter an option: "))
+        if n == 1:
+            encode_num = int(input("Please enter your password to encode: "))
+            print("Your password has been encoded and stored!")
+            encode_string = str(encode_num)
+            modified_int = []
+            for digit in encode_string:
+                modified_digit = int(digit) + 3
+                modified_int.append(str(modified_digit))
+
+            modified_number = int(''.join(modified_int))
 
 
-    elif n == 2:
-
+        elif n == 3:
+            break
 
 
 
