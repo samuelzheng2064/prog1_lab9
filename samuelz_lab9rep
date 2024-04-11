@@ -3,7 +3,7 @@
 def decode(modified_number):
     print("The encoded password is " + str(modified_number) + ",", end = "")
     original_number = ""
-    #loops through string and decodes it
+    #loops through string and decodes it and saves it to an output string
     for number in str(modified_number):
         if int(number) >= 3:
             original_number += str(int(number) - 3)
